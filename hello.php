@@ -1,1 +1,3 @@
-i am Ayush Saxena.
+<?php
+echo "My first PHP script!";
+?>
