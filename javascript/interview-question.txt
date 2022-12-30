@@ -22,7 +22,6 @@ typeof a;				// "object"
 
 2. What is equality in JavaScript ?
 answer :: Strict comparison (e.g., ===) checks for value equality without allowing coercion
-
 Abstract comparison (e.g. ==) checks for value equality with coercion allowed
 
 
