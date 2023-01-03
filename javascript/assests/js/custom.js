@@ -73,3 +73,9 @@ console.log(Number(birthYearTest), birthYearTest);
 console.log(Number(birthYearTest) + requiredAge);
 
 console.log(String(23) + birthYearTest + ` is the number`);
+
+//2. typecoercion
+
+console.log(`my number is ` + 23);
+console.log(23 + 42);
+console.log(`423` - `42` - 3);
