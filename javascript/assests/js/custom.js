@@ -116,3 +116,4 @@ newAge >= 18 ? console.log('i love wine') : console.log('i drink water');
 
 const drink = newAge >= 18 ? 'wine' : 'water' ;
 console.log(drink);
+
