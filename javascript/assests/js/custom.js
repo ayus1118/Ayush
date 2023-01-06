@@ -98,10 +98,21 @@ else{
 }
 
 
-let height;
+let height; // kyoki height ne bu default wale 0 li hai or 0 falsy value hai
 if (height){
     console.log('height is defined');
 }
 else{
     console.log('height is undefined');
 }
+
+
+// The conditonary operator (ternary) operator
+
+const newAge = 23;
+newAge >= 18 ? console.log('i love wine') : console.log('i drink water'); 
+
+// short form of ternary opertor 
+
+const drink = newAge >= 18 ? 'wine' : 'water' ;
+console.log(drink);
