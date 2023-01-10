@@ -117,3 +117,12 @@ newAge >= 18 ? console.log('i love wine') : console.log('i drink water');
 const drink = newAge >= 18 ? 'wine' : 'water' ;
 console.log(drink);
 
+function colorChange(){
+    document.getElementById('color-box').style.cssText =' background-color: red; height: 200px; width: 200px; margin: auto; border: 1px solid #000; ' ;
+}
+function backgroundImage(){
+    document.getElementById('color-box').style.cssText = 'background-image : url(./assests/img/img.jpg); height:200px; width: 200px; border: 1px solid #000; margin:auto; background-size: contain;';
+}
+function borderChange(){
+    document.getElementById('borderChange').parentElement.style.cssText = 'background-color: blue; height:200px; width: 200px; border: 1px solid red; margin:auto; background-size: contain;';
+}
