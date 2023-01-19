@@ -126,3 +126,9 @@ function backgroundImage(){
 function borderChange(){
     document.getElementById('borderChange').parentElement.style.cssText = 'background-color: blue; height:200px; width: 200px; border: 1px solid red; margin:auto; background-size: contain;';
 }
+function inputQuote(){
+    document.getElementById('new-quote').textContent ='my name is ayush';
+}
+function inputQuoteNew(){
+    document.getElementByClassName('new-class').textContent ='called by class';
+}
