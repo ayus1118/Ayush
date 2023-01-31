@@ -208,3 +208,18 @@ function myNewFunction(parameter1, parameter2){
 }
 const myNewdata = myNewFunction(5, 5);
 console.log(myNewdata);
+
+//array 
+
+const jonas = ['firstname', 'lastname',5-4];
+console.log(jonas);
+console.log(jonas.lenght);
+console.log(jonas[1]);
+const jay = ['ayush', 'saxena', jonas, 88-45];
+console.log(jay);
+
+//methord of array
+
+const friends =['ayush', 'akshay' , 'prince'];
+friends.push('jay');
+console.log(friends);
