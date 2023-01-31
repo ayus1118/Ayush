@@ -132,3 +132,65 @@ function inputQuote(){
 function inputQuoteNew(){
     document.getElementByClassName('new-class').textContent ='called by class';
 }
+
+
+// functions
+
+let functionVaribale= newFunction();
+function newFunction(){
+    alert('this is my new function');
+}
+ //function declearation
+let variable1 = function1(4,4);
+function function1(a,b){
+    return a * b;
+}
+console.log(variable1);
+
+
+//function expression
+let variable2 = function (para1, para2) 
+{
+    return para1 + para2;
+}
+
+let result = variable2(2,2);
+console.log(result);
+
+//arrow function
+//here birthyear work as a parameter
+const variable3 = birthyear => 2037 - birthyear;
+const newAge1 = variable3(1991);
+console.log(newAge1);
+
+// arrow function with one parameter with multiple line of code
+const yearsUnitRetirement = birthyear => {
+    const age = 2037 - birthyear;
+    const retirement = 65 - age;
+    return retirement;
+}
+console.log(yearsUnitRetirement(1991));
+
+//arrow function with multiple parameter with multiple line of code
+const yearsUnitRetirementNew = (birthyear , birthName) => 
+{
+    const age = 2037 - birthyear;
+    const retirement = 65 - age;
+    return `${birthName} retire in ${retirement} year`;
+}
+console.log(yearsUnitRetirementNew(1991, 'ayush'));
+
+//function under function
+
+const cutPieces = function(fruit){
+    return fruit * 4;
+}
+const fruitProcessor = function (apple,oranges){
+    const applePieces = cutPieces(apple);
+    const orangePieces = cutPieces(oranges);
+
+    const juice = `juice with ${applePieces} pieces of apple and ${orangePieces } pices of orange`;
+    return juice; 
+}
+
+console.log(fruitProcessor(2,3));
