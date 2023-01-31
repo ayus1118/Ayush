@@ -138,7 +138,7 @@ function inputQuoteNew(){
 
 let functionVaribale= newFunction();
 function newFunction(){
-    alert('this is my new function');
+    console.log('this is my new function');
 }
  //function declearation
 let variable1 = function1(4,4);
@@ -185,12 +185,26 @@ console.log(yearsUnitRetirementNew(1991, 'ayush'));
 const cutPieces = function(fruit){
     return fruit * 4;
 }
+const finalPieces = function(totalApplePieces, totalOrangePieces){
+    return totalApplePieces + totalOrangePieces;
+}
 const fruitProcessor = function (apple,oranges){
     const applePieces = cutPieces(apple);
     const orangePieces = cutPieces(oranges);
+    const totalPieces = finalPieces(applePieces, orangePieces);
 
-    const juice = `juice with ${applePieces} pieces of apple and ${orangePieces } pices of orange`;
+    const juice = `juice with ${applePieces} pieces of apple and ${orangePieces } pices of orange. total pieces are ${totalPieces}`;
     return juice; 
 }
 
 console.log(fruitProcessor(2,3));
+
+
+function myNewFunction(parameter1, parameter2){
+    innerFun = parameter1 * parameter2;
+    console.log(innerFun);
+    return innerFun;
+
+}
+const myNewdata = myNewFunction(5, 5);
+console.log(myNewdata);
