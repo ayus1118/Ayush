@@ -214,12 +214,109 @@ console.log(myNewdata);
 const jonas = ['firstname', 'lastname',5-4];
 console.log(jonas);
 console.log(jonas.lenght);
+console.log(jonas.length-1);
+jonas[1] = 'jay';
+console.log(jonas); 
 console.log(jonas[1]);
 const jay = ['ayush', 'saxena', jonas, 88-45];
 console.log(jay);
 
-//methord of array
+//methord of array (push) [to place value in ending]
 
 const friends =['ayush', 'akshay' , 'prince'];
 friends.push('jay');
 console.log(friends);
+
+// methord of array (unshift) [to place value in starting]
+friends.unshift('saxena');
+console.log(friends);
+
+//methord of array (remove) last elements
+friends.pop();
+console.log(friends);
+
+//methord of array (remove) first elements
+friends.shift();
+console.log(friends);
+
+//methord of finding index value 
+console.log(friends.indexOf('akshay')); //1
+
+//menthod of finding index value which hast not tere
+console.log(friends.indexOf('bob'));
+
+//include method of array (it only gives result in true or false) 
+console.log(friends.includes('akshay'));
+console.log(friends.includes('bob'));
+
+//object in javascript
+
+
+const objjonas = {
+    //keyvalue
+    firstName: 'ayush',
+    lastName: 'saxena',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['akshay','prince','chotu']
+}
+
+console.log(objjonas.firstName);
+console.log(objjonas.age);
+
+// any fuction that is attached to a object is called methord
+
+const methordJonas = {
+    firstName: 'ayush',
+    lastName: 'saxena',
+    birthyear: 1991,
+    job: 'teacher',
+    friends: ['akshay','prince','chotu'],
+    
+    calage : function(birthyear){
+        return 2037 - birthyear;
+    }
+}
+
+console.log(methordJonas.calage(1991));
+console.log(methordJonas[`calage`](1991));
+
+// this keyword
+
+const thisjonas = {
+    firstName: 'ayush',
+    lastName: 'saxena',
+    birthyear: 1991,
+    job: 'teacher',
+    friends: ['akshay','prince','chotu'],
+    hasDriverLicense: false,
+    
+    // calage : function(){
+    //     return 2047 - this.birthyear;
+    // }
+
+    // thisJonesMewAge : function(){
+    //     this.thisJonesAge = 2047 - this.birthyear;
+    //     return this.thisJonesAge;
+    // }
+
+    jonesDrivingLisence : function(){
+        return `jonas have ${this.hasDriverLicense ? 'a' : 'no' } driving license`;
+    }
+}
+// console.log(thisjonas.thisJonesMewAge());
+console.log(thisjonas.jonesDrivingLisence());
+
+
+//---------------counter code start ------------------------------//
+function addValue(){
+    let incValue =  document.getElementById('counter');
+    let val = parseInt(incValue.innerHTML) + 1;
+    incValue.innerHTML = val;
+}
+function deleteValue(){
+    let incValue =  document.getElementById('counter');
+    let val = parseInt(incValue.innerHTML > 0 ? incValue.innerHTML - 1 : 0);
+    incValue.innerHTML = val;
+}
+//---------------counter code end------------------------------//

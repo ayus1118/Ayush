@@ -48,3 +48,26 @@ padding: 5px;
 background-color: lightgreen;  
 } 
 
+/* counter code start */
+.Counter-Project{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.Counter-Project h1{
+    margin-bottom: 20px;
+}
+.Counter-Project span{
+    margin-bottom: 20px;
+}
+.Counter-Project button{
+    margin-bottom: 20px;
+}
+/* counter code end */
