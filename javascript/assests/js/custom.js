@@ -261,7 +261,7 @@ const objjonas = {
     friends: ['akshay','prince','chotu']
 }
 
-console.log(objjonas.firstName);
+console.log(objjonas.firstName); 
 console.log(objjonas.age);
 
 // any fuction that is attached to a object is called methord
@@ -320,3 +320,55 @@ function deleteValue(){
     incValue.innerHTML = val;
 }
 //---------------counter code end------------------------------//
+
+//----------------loops-----------------------------//
+
+
+
+//------------------for loops----------------------//
+
+for(let rep = 1; rep <=10 ; rep ++){
+   console.log(`value ${rep}`);
+}
+
+// for loop arrray
+
+const jonasArray = [ 'ayush', 'saxena', '11-07-1997' ];
+
+for(let i = 0; i <= 2 ; i ++){
+    console.log(jonasArray[i]);
+}
+
+// continue in loop
+
+for(let i = 0; i <= 2 ; i ++){
+    console.log(jonasArray[i]);
+    continue;
+}
+
+// break in loop
+for(let i = 0; i <= 2 ; i ++){
+    console.log(jonasArray[i]);
+    break;
+}
+
+// reverse for loop
+
+for(let i = jonasArray.length -1 ; i >= 0 ; i --){
+    console.log(jonasArray[i]);
+}
+
+//while loop
+
+let rep = 1;
+while(rep <= 10){
+    console.log('loops are here');
+    rep++;
+}
+let dice = Math.trunc(Math.random() * 6) + 1;
+while(dice !== 6){
+    console.log (`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if(dice === 6) console.log(`loop is about to end..`);
+
+}
