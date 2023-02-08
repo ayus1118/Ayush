@@ -1,22 +1,22 @@
-console.log(typeof 'ayush')
+console.log(typeof "ayush");
 
 let javaScriptDemo = false;
-console.log(javaScriptDemo)
+console.log(javaScriptDemo);
 
-const presentYear = 2022 ;
+const presentYear = 2022;
 const ayush = presentYear - 1997;
 const ayushi = presentYear - 1998;
 console.log(ayush * 2, ayushi / 2);
 
-// test first 
+// test first
 // calculating and comparing BMI of two person
 
 //BMI = mass / height **2 = mass /  (height * height). (mass will be in kg and height in meter).
 
-const storeMass = 95 ;
-const storeHeight = 1.88 ;
-const johnMass = 85 ;
-const johnHeight = 1.76 ;
+const storeMass = 95;
+const storeHeight = 1.88;
+const johnMass = 85;
+const johnHeight = 1.76;
 
 const storeBmi = storeMass / storeHeight ** 2;
 console.log(storeMass);
@@ -24,7 +24,7 @@ console.log(storeMass);
 const johnBmi = storeMass / (johnHeight * johnHeight);
 console.log(johnBmi);
 
-const storeHeigherBMI =  storeBmi > johnBmi;
+const storeHeigherBMI = storeBmi > johnBmi;
 console.log(storeHeigherBMI);
 
 //strings and Template Literals
@@ -34,10 +34,11 @@ const job = "developer";
 const birthyear = "1997";
 const year = 2022;
 
-const description = "I' am " + firstName + " a " + job + " with a age of " + (year - birthyear);
+const description =
+  "I' am " + firstName + " a " + job + " with a age of " + (year - birthyear);
 console.log(description);
 
-const descriptionNew = `I am  ${firstName}` ;
+const descriptionNew = `I am  ${firstName}`;
 console.log(descriptionNew);
 
 //multiple line strings
@@ -50,25 +51,24 @@ console.log(`multiple
 line
 string`);
 
-// if else 
+// if else
 
 const age = 17;
 const requiredAge = 18;
 
-if (age >= requiredAge){
-    console.log(`you can start driving`);
-}
-else{
-    const yearsLeft = requiredAge - age;
-    console.log(`years left ${yearsLeft}`);
+if (age >= requiredAge) {
+  console.log(`you can start driving`);
+} else {
+  const yearsLeft = requiredAge - age;
+  console.log(`years left ${yearsLeft}`);
 }
 
 //typeconversion and typecoercion
 
-// 1. typeconversion : when we manually convert one type to another. 
+// 1. typeconversion : when we manually convert one type to another.
 // 2. typecoercion : when javascript automatically convert one type to another.
 
-const  birthYearTest = '1991';
+const birthYearTest = "1991";
 console.log(Number(birthYearTest), birthYearTest);
 console.log(Number(birthYearTest) + requiredAge);
 
@@ -85,150 +85,143 @@ console.log(`423` - `42` - 3);
 
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean('jonas'));
+console.log(Boolean("jonas"));
 console.log(Boolean({}));
-console.log(Boolean(''));
+console.log(Boolean(""));
 
-const money = 0;  //zero is falsy value soo we get the else answer
-if (money){
-    console.log('dont have'); 
+const money = 0; //zero is falsy value soo we get the else answer
+if (money) {
+  console.log("dont have");
+} else {
+  console.log("you should have a job");
 }
-else{
-    console.log('you should have a job');
-}
-
 
 let height; // kyoki height ne bu default wale 0 li hai or 0 falsy value hai
-if (height){
-    console.log('height is defined');
+if (height) {
+  console.log("height is defined");
+} else {
+  console.log("height is undefined");
 }
-else{
-    console.log('height is undefined');
-}
-
 
 // The conditonary operator (ternary) operator
 
 const newAge = 23;
-newAge >= 18 ? console.log('i love wine') : console.log('i drink water'); 
+newAge >= 18 ? console.log("i love wine") : console.log("i drink water");
 
-// short form of ternary opertor 
+// short form of ternary opertor
 
-const drink = newAge >= 18 ? 'wine' : 'water' ;
+const drink = newAge >= 18 ? "wine" : "water";
 console.log(drink);
 
-function colorChange(){
-    document.getElementById('color-box').style.cssText =' background-color: red; height: 200px; width: 200px; margin: auto; border: 1px solid #000; ' ;
+function colorChange() {
+  document.getElementById("color-box").style.cssText =
+    " background-color: red; height: 200px; width: 200px; margin: auto; border: 1px solid #000; ";
 }
-function backgroundImage(){
-    document.getElementById('color-box').style.cssText = 'background-image : url(./assests/img/img.jpg); height:200px; width: 200px; border: 1px solid #000; margin:auto; background-size: contain;';
+function backgroundImage() {
+  document.getElementById("color-box").style.cssText =
+    "background-image : url(./assests/img/img.jpg); height:200px; width: 200px; border: 1px solid #000; margin:auto; background-size: contain;";
 }
-function borderChange(){
-    document.getElementById('borderChange').parentElement.style.cssText = 'background-color: blue; height:200px; width: 200px; border: 1px solid red; margin:auto; background-size: contain;';
+function borderChange() {
+  document.getElementById("borderChange").parentElement.style.cssText =
+    "background-color: blue; height:200px; width: 200px; border: 1px solid red; margin:auto; background-size: contain;";
 }
-function inputQuote(){
-    document.getElementById('new-quote').textContent ='my name is ayush';
+function inputQuote() {
+  document.getElementById("new-quote").textContent = "my name is ayush";
 }
-function inputQuoteNew(){
-    document.getElementByClassName('new-class').textContent ='called by class';
+function inputQuoteNew() {
+  document.getElementByClassName("new-class").textContent = "called by class";
 }
-
 
 // functions
 
-let functionVaribale= newFunction();
-function newFunction(){
-    console.log('this is my new function');
+let functionVaribale = newFunction();
+function newFunction() {
+  console.log("this is my new function");
 }
- //function declearation
-let variable1 = function1(4,4);
-function function1(a,b){
-    return a * b;
+//function declearation
+let variable1 = function1(4, 4);
+function function1(a, b) {
+  return a * b;
 }
 console.log(variable1);
 
-
 //function expression
-let variable2 = function (para1, para2) 
-{
-    return para1 + para2;
-}
+let variable2 = function (para1, para2) {
+  return para1 + para2;
+};
 
-let result = variable2(2,2);
+let result = variable2(2, 2);
 console.log(result);
 
 //arrow function
 //here birthyear work as a parameter
-const variable3 = birthyear => 2037 - birthyear;
+const variable3 = (birthyear) => 2037 - birthyear;
 const newAge1 = variable3(1991);
 console.log(newAge1);
 
 // arrow function with one parameter with multiple line of code
-const yearsUnitRetirement = birthyear => {
-    const age = 2037 - birthyear;
-    const retirement = 65 - age;
-    return retirement;
-}
+const yearsUnitRetirement = (birthyear) => {
+  const age = 2037 - birthyear;
+  const retirement = 65 - age;
+  return retirement;
+};
 console.log(yearsUnitRetirement(1991));
 
 //arrow function with multiple parameter with multiple line of code
-const yearsUnitRetirementNew = (birthyear , birthName) => 
-{
-    const age = 2037 - birthyear;
-    const retirement = 65 - age;
-    return `${birthName} retire in ${retirement} year`;
-}
-console.log(yearsUnitRetirementNew(1991, 'ayush'));
+const yearsUnitRetirementNew = (birthyear, birthName) => {
+  const age = 2037 - birthyear;
+  const retirement = 65 - age;
+  return `${birthName} retire in ${retirement} year`;
+};
+console.log(yearsUnitRetirementNew(1991, "ayush"));
 
 //function under function
 
-const cutPieces = function(fruit){
-    return fruit * 4;
-}
-const finalPieces = function(totalApplePieces, totalOrangePieces){
-    return totalApplePieces + totalOrangePieces;
-}
-const fruitProcessor = function (apple,oranges){
-    const applePieces = cutPieces(apple);
-    const orangePieces = cutPieces(oranges);
-    const totalPieces = finalPieces(applePieces, orangePieces);
+const cutPieces = function (fruit) {
+  return fruit * 4;
+};
+const finalPieces = function (totalApplePieces, totalOrangePieces) {
+  return totalApplePieces + totalOrangePieces;
+};
+const fruitProcessor = function (apple, oranges) {
+  const applePieces = cutPieces(apple);
+  const orangePieces = cutPieces(oranges);
+  const totalPieces = finalPieces(applePieces, orangePieces);
 
-    const juice = `juice with ${applePieces} pieces of apple and ${orangePieces } pices of orange. total pieces are ${totalPieces}`;
-    return juice; 
-}
+  const juice = `juice with ${applePieces} pieces of apple and ${orangePieces} pices of orange. total pieces are ${totalPieces}`;
+  return juice;
+};
 
-console.log(fruitProcessor(2,3));
+console.log(fruitProcessor(2, 3));
 
-
-function myNewFunction(parameter1, parameter2){
-    innerFun = parameter1 * parameter2;
-    console.log(innerFun);
-    return innerFun;
-
+function myNewFunction(parameter1, parameter2) {
+  innerFun = parameter1 * parameter2;
+  console.log(innerFun);
+  return innerFun;
 }
 const myNewdata = myNewFunction(5, 5);
 console.log(myNewdata);
 
-//array 
+//array
 
-const jonas = ['firstname', 'lastname',5-4];
+const jonas = ["firstname", "lastname", 5 - 4];
 console.log(jonas);
 console.log(jonas.lenght);
-console.log(jonas.length-1);
-jonas[1] = 'jay';
-console.log(jonas); 
+console.log(jonas.length - 1);
+jonas[1] = "jay";
+console.log(jonas);
 console.log(jonas[1]);
-const jay = ['ayush', 'saxena', jonas, 88-45];
+const jay = ["ayush", "saxena", jonas, 88 - 45];
 console.log(jay);
 
 //methord of array (push) [to place value in ending]
 
-const friends =['ayush', 'akshay' , 'prince'];
-friends.push('jay');
+const friends = ["ayush", "akshay", "prince"];
+friends.push("jay");
 console.log(friends);
 
 // methord of array (unshift) [to place value in starting]
-friends.unshift('saxena');
+friends.unshift("saxena");
 console.log(friends);
 
 //methord of array (remove) last elements
@@ -239,44 +232,43 @@ console.log(friends);
 friends.shift();
 console.log(friends);
 
-//methord of finding index value 
-console.log(friends.indexOf('akshay')); //1
+//methord of finding index value
+console.log(friends.indexOf("akshay")); //1
 
 //menthod of finding index value which hast not tere
-console.log(friends.indexOf('bob'));
+console.log(friends.indexOf("bob"));
 
-//include method of array (it only gives result in true or false) 
-console.log(friends.includes('akshay'));
-console.log(friends.includes('bob'));
+//include method of array (it only gives result in true or false)
+console.log(friends.includes("akshay"));
+console.log(friends.includes("bob"));
 
 //object in javascript
 
-
 const objjonas = {
-    //keyvalue
-    firstName: 'ayush',
-    lastName: 'saxena',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['akshay','prince','chotu']
-}
+  //keyvalue
+  firstName: "ayush",
+  lastName: "saxena",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["akshay", "prince", "chotu"],
+};
 
-console.log(objjonas.firstName); 
+console.log(objjonas.firstName);
 console.log(objjonas.age);
 
 // any fuction that is attached to a object is called methord
 
 const methordJonas = {
-    firstName: 'ayush',
-    lastName: 'saxena',
-    birthyear: 1991,
-    job: 'teacher',
-    friends: ['akshay','prince','chotu'],
-    
-    calage : function(birthyear){
-        return 2037 - birthyear;
-    }
-}
+  firstName: "ayush",
+  lastName: "saxena",
+  birthyear: 1991,
+  job: "teacher",
+  friends: ["akshay", "prince", "chotu"],
+
+  calage: function (birthyear) {
+    return 2037 - birthyear;
+  },
+};
 
 console.log(methordJonas.calage(1991));
 console.log(methordJonas[`calage`](1991));
@@ -284,91 +276,107 @@ console.log(methordJonas[`calage`](1991));
 // this keyword
 
 const thisjonas = {
-    firstName: 'ayush',
-    lastName: 'saxena',
-    birthyear: 1991,
-    job: 'teacher',
-    friends: ['akshay','prince','chotu'],
-    hasDriverLicense: false,
-    
-    // calage : function(){
-    //     return 2047 - this.birthyear;
-    // }
+  firstName: "ayush",
+  lastName: "saxena",
+  birthyear: 1991,
+  job: "teacher",
+  friends: ["akshay", "prince", "chotu"],
+  hasDriverLicense: false,
 
-    // thisJonesMewAge : function(){
-    //     this.thisJonesAge = 2047 - this.birthyear;
-    //     return this.thisJonesAge;
-    // }
+  // calage : function(){
+  //     return 2047 - this.birthyear;
+  // }
 
-    jonesDrivingLisence : function(){
-        return `jonas have ${this.hasDriverLicense ? 'a' : 'no' } driving license`;
-    }
-}
+  // thisJonesMewAge : function(){
+  //     this.thisJonesAge = 2047 - this.birthyear;
+  //     return this.thisJonesAge;
+  // }
+
+  jonesDrivingLisence: function () {
+    return `jonas have ${this.hasDriverLicense ? "a" : "no"} driving license`;
+  },
+};
 // console.log(thisjonas.thisJonesMewAge());
 console.log(thisjonas.jonesDrivingLisence());
 
-
 //---------------counter code start ------------------------------//
-function addValue(){
-    let incValue =  document.getElementById('counter');
-    let val = parseInt(incValue.innerHTML) + 1;
-    incValue.innerHTML = val;
+function addValue() {
+  let incValue = document.getElementById("counter");
+  let val = parseInt(incValue.innerHTML) + 1;
+  incValue.innerHTML = val;
 }
-function deleteValue(){
-    let incValue =  document.getElementById('counter');
-    let val = parseInt(incValue.innerHTML > 0 ? incValue.innerHTML - 1 : 0);
-    incValue.innerHTML = val;
+function deleteValue() {
+  let incValue = document.getElementById("counter");
+  let val = parseInt(incValue.innerHTML > 0 ? incValue.innerHTML - 1 : 0);
+  incValue.innerHTML = val;
 }
 //---------------counter code end------------------------------//
 
 //----------------loops-----------------------------//
 
+//------------------for loops starts----------------------//
 
-
-//------------------for loops----------------------//
-
-for(let rep = 1; rep <=10 ; rep ++){
-   console.log(`value ${rep}`);
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`value ${rep}`);
 }
 
 // for loop arrray
 
-const jonasArray = [ 'ayush', 'saxena', '11-07-1997' ];
+const jonasArray = ["ayush", "saxena", "11-07-1997"];
 
-for(let i = 0; i <= 2 ; i ++){
-    console.log(jonasArray[i]);
+for (let i = 0; i <= 2; i++) {
+  console.log(jonasArray[i]);
 }
 
 // continue in loop
 
-for(let i = 0; i <= 2 ; i ++){
-    console.log(jonasArray[i]);
-    continue;
+for (let i = 0; i <= 2; i++) {
+  console.log(jonasArray[i]);
+  continue;
 }
 
 // break in loop
-for(let i = 0; i <= 2 ; i ++){
-    console.log(jonasArray[i]);
-    break;
+for (let i = 0; i <= 2; i++) {
+  console.log(jonasArray[i]);
+  break;
 }
 
 // reverse for loop
 
-for(let i = jonasArray.length -1 ; i >= 0 ; i --){
-    console.log(jonasArray[i]);
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+  console.log(jonasArray[i]);
 }
 
 //while loop
 
 let rep = 1;
-while(rep <= 10){
-    console.log('loops are here');
-    rep++;
+while (rep <= 10) {
+  console.log("loops are here");
+  rep++;
 }
 let dice = Math.trunc(Math.random() * 6) + 1;
-while(dice !== 6){
-    console.log (`you rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if(dice === 6) console.log(`loop is about to end..`);
-
+while (dice !== 6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`loop is about to end..`);
 }
+
+//------------------for loops end----------------------//
+// find the temperature amplitude
+// temperature amplitude = maximum temp - minimum temp.
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+let storeMaxTemprature = temperatures[0];
+for (let i = 0; i <= temperatures.length - 1; i++) {
+  if (temperatures[i] > storeMaxTemprature) {
+    storeMaxTemprature = temperatures[i];
+  }
+}
+console.log(storeMaxTemprature);
+
+let storeMinTemprature = temperatures[0];
+for (let i = 0; i <= temperatures.length - 1; i++) {
+  if (temperatures[i] < storeMinTemprature) {
+    storeMinTemprature = temperatures[i];
+  }
+}
+console.log(storeMinTemprature);
