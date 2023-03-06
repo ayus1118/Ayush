@@ -366,17 +366,16 @@ while (dice !== 6) {
 // temperature amplitude = maximum temp - minimum temp.
 const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
 let storeMaxTemprature = temperatures[0];
+let storeMinTemprature = temperatures[0];
 for (let i = 0; i <= temperatures.length - 1; i++) {
   if (temperatures[i] > storeMaxTemprature) {
     storeMaxTemprature = temperatures[i];
   }
-}
-console.log(storeMaxTemprature);
-
-let storeMinTemprature = temperatures[0];
-for (let i = 0; i <= temperatures.length - 1; i++) {
   if (temperatures[i] < storeMinTemprature) {
     storeMinTemprature = temperatures[i];
   }
 }
+console.log(storeMaxTemprature);
 console.log(storeMinTemprature);
+
+//-------------------DOM-----------------------//
