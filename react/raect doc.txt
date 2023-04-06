@@ -1,0 +1,16 @@
+1) what is pakage.json file
+answer:: basically package.json file store all the information reading the project 
+and it store all the meta data regarding the project and 
+also store all dependence we have in project.  
+
+
+
+2)ReactDom.render('kya dikhana hai','kha dikhana hai','callback function')
+
+3)what is JSX
+answer:: it stands for javascript extension writing html markup in react is known as jsx
+
+4) why we use react module
+answer:: IF WE WANT TO USE HTML MARK UP IN REACT THEN WE HAVE TO IMPORT REACT MODULE
+
+
