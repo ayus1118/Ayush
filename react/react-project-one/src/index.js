@@ -10,11 +10,20 @@ root.render(
 );
 
 ReactDOM.render(<h1> hello world </h1>, document.getElementById("root-new"));
-// in react v16 it is possible for render() to return an array of elements.
+// in react v16 it is possible for render() to return an array of elements
 ReactDOM.render(
-  [<h1> hello world </h1>, <p> lets start</p>],
+  [<h1> hello world i am here</h1>, <p> lets start</p>],
   document.getElementById("root-three")
 );
 
+// jsx expression
+const flname = "ayush";
+ReactDOM.render(
+  <>
+    <h1>my name is {flname}</h1>
+    <p>my lucky number is {2 + 5}</p>
+  </>,
+  document.getElementById("jsx-expression")
+);
 reportWebVitals();
 export default App;
