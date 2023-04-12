@@ -25,5 +25,17 @@ ReactDOM.render(
   </>,
   document.getElementById("jsx-expression")
 );
+//template literals
+//template literals is like when we use variable in string javascript we use backticks `` that statement is known as template literals
+
+const flnames = "ayush";
+const lname = "saxena";
+ReactDOM.render(
+  <>
+    <h1>{`my name is ${flnames}  ${lname}`}</h1>
+  </>,
+  document.getElementById("template-literals")
+);
+
 reportWebVitals();
 export default App;
