@@ -37,5 +37,23 @@ ReactDOM.render(
   document.getElementById("template-literals")
 );
 
+// jsx attributes
+//
+const img1 =
+  "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg";
+ReactDOM.render(
+  <>
+    <h1 contentEditable="true" style={{ color: "red", textAlign: "center" }}>
+      jsx attribute
+    </h1>
+    ,<p> lets start</p>,
+    <img
+      src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+      alt="demo image"
+    />
+    <img src={img1} alt="demo image" />
+  </>,
+  document.getElementById("jsx-attribute")
+);
 reportWebVitals();
 export default App;
