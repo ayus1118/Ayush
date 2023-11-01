@@ -116,22 +116,14 @@
         <a href="#"><button>Add to Cart</button></a>
     </div>
     <button onclick = "fetchData()"> Fetch API to get data </button>
-    <div id = "output"> </div> 
 </div>  
-
 <script>
       let output = document.getElementById('output');
       function fetchData() {
-         fetch('https://catfact.ninja/fact')
+         fetch('./package.json')
          .then(response => response.json())
          .then(data => {
-            console.log(fact);
-            output.innerHTML += "id = " + fact + "<br/>";
-            output.innerHTML += "employee_name = " + data[0].employee_name + "<br/>";
-            output.innerHTML += "category = " + data.category + "<br/>";
-            output.innerHTML += "price = " + data.price + "<br/>";
-            output.innerHTML += "rating = " + data.rating + "<br/>";
-            output.innerHTML += "stock = " + data.stock + "<br/>";
+            console.log(data);
          }) 
       }
 </script>
