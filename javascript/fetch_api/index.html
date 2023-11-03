@@ -1,129 +1,32 @@
-<style>
-    ​​​​​​* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
 
-.card-container {
-    padding: 20px;
-}
-.content-card,
-.product-card,
-.profile-card {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #ccc;
-    border-radius: 7px;
-    max-width: 250px;
-}
-.content-card {
-    background: #E9724C;
-    padding: 10px;
-}
-
-.content-card img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.content-card h3 {
-    margin: 10px 0;
-    font-family: monospace;
-    font-size: 1.5rem;
-}
-
-.content-card a {
-    text-decoration: none;
-    color: #6f2ed8;
-    margin:12px 0 7px 0;
-    font-size: 1rem;
-}
-.product-card img {
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-}
-
-.product-card h3 {
-    margin: 5px 10px;
-    font-family: monospace;
-    font-size: 1.5rem;
-}
-
-.product-card p {
-    margin: 5px 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.product-card a {
-    align-self: flex-end;
-}
-
-.product-card button {
-    width: 100px;
-    height: 30px;
-    margin: 10px;
-    border: 1px solid #8f3642;
-    border-radius: 4px;
-    background-color: #FFC857;
-    font-weight: 700;
-    cursor: pointer;
-}
-.profile-card img {
-    border-radius: 5px 5px 0 0;
-    height: 200px;
-    object-fit: cover;
-}
-
-.profile-card h3 {
-    margin: 10px;
-    font-family: monospace;
-    font-size: 1.5rem;
-}
-
-.profile-card p:first-of-type {
-    margin:0px 10px;
-    font-family: 'Times New Roman', Times, serif;
-    color: cornflowerblue;
-}
-
-.profile-card p:last-of-type {
-    margin: 5px 10px;
-    font-size: 0.9rem;
-}
-
-.profile-card a {
-    text-decoration: none;
-    margin: 5px 10px 10px 10px;
-    padding: 5px 15px;
-    align-self: center;
-    border: 1px solid cornflowerblue;
-    border-radius: 15px;
-    color: black;
-    font-family: monospace;
-    font-weight: 500;
-}   
-</style>
-<div class="card-container">
-     <!-- Product Card -->
-    <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Headphones on a yellow background">
-        <h3>Product Name</h3>
-        <p>$19.99</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Aspernatur, voluptatibus.</p>
-        <a href="#"><button>Add to Cart</button></a>
+    <div>
+        <div id = "output"> </div> 
+        <button onclick = "fetchData()"> Fetch API to get data </button>
     </div>
-    <button onclick = "fetchData()"> Fetch API to get data </button>
-</div>  
+</body>
+</html>
+
 <script>
       let output = document.getElementById('output');
       function fetchData() {
          fetch('./package.json')
          .then(response => response.json())
          .then(data => {
-            console.log(data);
-         }) 
+            data.forEach( element => {
+                alert('hello');   
+                output.innerHTML += "id = " + data.id + "<br/>";
+                output.innerHTML += "brand = " + data.brand + "<br/>";
+                output.innerHTML += "category = " + data.category + "<br/>";
+                output.innerHTML += "price = " + data.price + "<br/>";
+                output.innerHTML += "rating = " + data.rating + "<br/>";
+                output.innerHTML += "stock = " + data.stock + "<br/>"; 
+            });
+         })
       }
 </script>
