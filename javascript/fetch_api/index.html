@@ -6,27 +6,51 @@
 <body>
 
     <div>
-        <div id = "output"> </div> 
         <button onclick = "fetchData()"> Fetch API to get data </button>
+        <div class="api-data">
+            <div id = "for_loop_demo">
+                <h1>FOR LOOP DATA</h1>
+            </div>
+            <div id = "forEach_loop_demo">
+                <h1>FOREACH LOOP DATA</h1>
+            </div>
+        </div> 
     </div>
 </body>
 </html>
-
+,<style>
+    .api-data{
+        display: flex;
+        justify-content: space-around;
+    }
+    button{
+        display: block;
+        margin: auto;
+    }
+</style>
 <script>
       let output = document.getElementById('output');
       function fetchData() {
+        var dataArray = [];
          fetch('./package.json')
          .then(response => response.json())
          .then(data => {
-            data.forEach( element => {
-                alert('hello');   
-                output.innerHTML += "id = " + data.id + "<br/>";
-                output.innerHTML += "brand = " + data.brand + "<br/>";
-                output.innerHTML += "category = " + data.category + "<br/>";
-                output.innerHTML += "price = " + data.price + "<br/>";
-                output.innerHTML += "rating = " + data.rating + "<br/>";
-                output.innerHTML += "stock = " + data.stock + "<br/>"; 
+            dataArray = data.data
+            for(let i=0; i < dataArray.length; i++){
+                for_loop_demo.innerHTML += "Id = " + dataArray[i].id + "<br/>";
+                for_loop_demo.innerHTML += "Employee Name = " + dataArray[i].employee_name + "<br/>";
+                for_loop_demo.innerHTML += "Employee Salary = " + dataArray[i].employee_salary + "<br/>";
+                for_loop_demo.innerHTML += "Employee Age = " +  dataArray[i].employee_age + "<br/>";
+                for_loop_demo.innerHTML += "Profile Image = " + dataArray[i].profile_image + "<br/><br/><br/><br/>"; 
+            }
+            dataArray.forEach(element => {
+                forEach_loop_demo.innerHTML += "Id = " + element.id + "<br/>";
+                forEach_loop_demo.innerHTML += "Employee Name = " + element.employee_name + "<br/>";
+                forEach_loop_demo.innerHTML += "Employee Salary = " + element.employee_salary + "<br/>";
+                forEach_loop_demo.innerHTML += "Employee Age = " +  element.employee_age + "<br/>";
+                forEach_loop_demo.innerHTML += "Profile Image = " + element.profile_image + "<br/><br/><br/><br/>"; 
             });
-         })
+        })
+   
       }
 </script>
