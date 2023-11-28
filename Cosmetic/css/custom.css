@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ledger&family=My+Soul&display=swap');
+*{ margin:0; padding:0; box-sizing:border-box; -webkit-box-sizing:border-box; border: none; outline: none;}
+header,footer,aside,nav,section{ display:block;}
+ul,li{ list-style:none;margin: 0;padding:0;}
+a{ text-decoration:none; margin:0; padding:0;}
+img, a { border:none; outline:none;}
+
+.container{
+	max-width: 1170px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*********************************************HEADER*****************************************/
+
+.topbar{
+	background-color: #333;
+	padding: 11px 0;
+}
+.topbar ul,.headerIcons{
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+}
+.topbar a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: 'Ledger', serif;
+}
+.logo {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #fff;
+}
+.headerIcons{
+	justify-content: end;
+}
+.headerIcons li:first-child {
+    margin-left: 0;
+}
+.headerIcons li {
+    margin-left: 20px;
+}
+.customNavigation{
+	background-color: #ffffff;
+	padding: 35px 0;
+	box-shadow: 0 4px 30px 0 rgb(0, 0, 0, 10%);
+}
+.navigationRow{
+	align-items: center;
+}
+.customNav{
+	width: 100%;
+	justify-content: space-evenly;
+}
+.customNav .nav-item .nav-link,.wishlist a{
+	padding: 0px 18px;
+	font-family: 'Ledger', serif;
+	font-size: 18px;
+	line-height: 28px;
+	color: #333;
+	position: relative;
+	text-transform: capitalize;
+}
+.wishlist a:first-child{
+	padding-left: 0;
+}
+.customNav .nav-item .nav-link:hover,.wishlist a:hover,.topbar a:hover{
+	color:#FFC9C9 !important;
+	transition: 0.5s;
+}
+.customNav .nav-item .nav-link.active:after{
+	content: "";
+	width: 35px;
+	height: 5px;
+	background-color: #FFC9C9;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 5px;
+    z-index: -1;
+}
+
+
+
+
+/**************************************BANNER**************************************/
+
+
+.customBanner {
+    background-image: url(../img/banner-bg.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 50px;
+}
+.bannerText h1{
+	font-size: 90px;
+	line-height: 100px;
+	font-family: 'My Soul', cursive;
+	text-transform: capitalize;
+	color: #000;
+	margin-bottom: 20px;
+}
+.bannerText p{
+	font-size: 22px;
+	line-height: 43px;
+	color: #555;
+	margin-bottom: 60px;
+	font-family: 'Ledger', serif;
+	    max-width: 770px;
+
+}
+.bannerText a,.exploreBtn a{
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #777;
+	display: inline-block;
+	padding: 14px 50px;
+	font-size: 18px;
+	font-family: 'Ledger', serif;	 
+	font-weight: 600;
+}
+.banner__image img{
+   width: 100%;
+}
+.bannerText {
+    margin-left: calc(100% - 720px);
+    width: calc(100% + 50px);
+}
+
+
+/**************************************BANNER**************************************/
+
+
+
+.customCategories{
+	padding: 50px 0;
+}
+.mainHeading{
+	text-align: center;
+	 padding-top: 12px;
+    padding-bottom: 27px;
+	min-height: 130px;
+}
+ .mainHeading h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 70px;
+    font-family: 'My Soul', cursive;
+    color: #FC9D9D;
+    text-transform: capitalize;
+    margin-bottom: 0;
+        padding-top: 20px;
+}
+ .mainHeading h2:after , .mainHeading h2:before{
+   width: 432px; 
+   height: 130px; 
+   border:3px solid #FFC9C9;
+   -moz-border-radius: 230px / 70px; 
+   -webkit-border-radius: 230px / 70px; 
+   border-radius: 230px / 70px;
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50% , -40%);
+}
+.mainHeading h2:before{
+	top: 40%;
+}
+.subHeading {
+    margin: 35px 0 50px 0;
+    font-size: 26px;
+    color: #333;
+    font-family: 'Ledger', serif;
+    text-align: center;
+}
+.categoriesBlock img {
+    width: 100%;
+}
+.categoriesBlock {
+    position: relative;
+}
+.categoriesText {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    display: inline-block;
+    background: #fff9;
+    text-align: center;
+    width: 80%;
+    padding: 10px 37px;
+    font-family: 'Ledger', serif;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #333;
+}
+.categoriesText span {
+    display: block;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 6px;
+}
+.categoriesText:hover{
+	color:#000 !important;
+	transition: 0.5s;
+}
+
+
+/*******************************************Benefits*******************************************/
+
+
+
+.customBenefits{
+	margin: 50px 0;
+	background-image: url(../img/bg1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding:82px 0 22px 0;
+	z-index: 0;
+	background-attachment: fixed;
+	background-position: center;      
+}
+.benifitBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+.benifitBlock span {
+    background-image: url(../img/bg3.png);
+    background-size: contain;
+    padding: 20px;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.benifitBlock span:hover {
+    transform: rotateX(360deg) scaleX(-1);
+    transition: 0.5s all;
+}
+.benifitBlock a{
+	color: #000;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-family: 'Ledger', serif;
+}
+.benifitBlock p{
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	color: #555555;
+	text-transform: none;
+	line-height: 28px;
+	margin-bottom: 0;
+}
+
+
+
+/*******************************************Product*******************************************/
+
+
+.customProduct{
+	    padding:50px 0  ;
+}
+.productBlock {
+    background: #f4f4f4;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.productBlock a {
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+    font-family: 'Ledger', serif;
+}
+.productBlock span {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    color: #777;
+    font-family: 'Ledger', serif;
+    margin-top: 7px;
+} 
+.ratings{
+	padding-bottom: 20px;
+}
+.exploreBtn{
+	text-align: center;
+	margin-top: 30px;
+}
+.exploreBtn a{
+	background-color: #fff;
+    color: #000;
+    border: 1px solid #777;
+    display: inline-block;
+    padding: 19px 52px;
+    font-family: 'Ledger', serif;
+    font-weight: 600;
+}
+.productDeatil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 35px;
+    right: 35px;
+    top: 48px;
+    bottom: 48px;
+    background-color: #fffc;
+        opacity: 0;
+
+}
+.productDeatil a {
+    display: block;
+    background: #fff;
+    margin: 7.5px;
+    /* padding: 17px; */
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border: 1px solid #777;
+    text-align: center;
+}
+.productBlock:hover .productDeatil{
+	opacity: 1;
+	transition: 0.5s;
+}
+
+
+/********************************Quote*******************************/
+
+
+
+.customQuote {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+    background-position: center;
+    margin: 50px 0;
+}
+.customQuote h2{
+	font-family: 'My Soul', cursive;
+	font-size: 70px;
+	margin-bottom: 20px;
+	color: #FC9D9D;
+}
+.customQuote p{
+	font-size: 20px;
+	line-height: 40px;
+	font-family: 'Lato', sans-serif;
+	color: #777;
+	margin-bottom: 0;
+}
+
+
+
+/*******************************************Blog******************************************/
+
+
+.customBlog{
+	padding-top: 50px ;
+}
+.customBlog img{
+	width: 100%;
+}
+.blogText h3{
+	font-size: 22px;
+	color: #000;
+	font-family: 'Ledger', serif;
+	margin-bottom: 15px;
+}
+.blogText p{
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Lato', sans-serif;
+	color: #777;
+	    border-bottom: 1px solid #FC9D9D;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.blogText {
+    padding: 20px 20px 15px 20px;
+    max-width: 330px;
+    margin: auto;
+    position: relative;
+    top: -50px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 15%);
+}
+.blogText a {
+    color: #000;
+    font-family: 'Ledger', serif;
+    font-size: 16px;
+}
+.blogText:hover a, .blogText:hover h3{
+	color: #FC9D9D;
+	transition: 0.5s ease-in-out;
+}
+
+
+
+/*******************************************Blog******************************************/
+
+
+
+.customBrand {
+	padding: 50px 0;
+}
+.brandImg {
+    min-height: 150px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.customSlider {
+    width: calc(100% - 120px);
+    margin: auto;
+}
+.customSlider {
+	position: relative;
+}
+.customSlider .owl-prev span ,.customSlider .owl-next span{
+    background-color: transparent !important;
+    color: transparent !important;    
+}
+.customSlider .owl-prev span:after,.customSlider .owl-prev span:before {
+    content: url(../img/arrow.png);
+     text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+}
+.owl-next span:after, .owl-next span:before {
+    content: url(../img/right.png);
+     text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform:  translateY(-50%);
+ }
+
+
+/******************************************Instagram********************************************/
+
+
+.customInstagram{
+	position: 50px 0;
+}
+.customInstagram ul{
+	display: flex;
+	align-items: center;
+}
+.customInstagram img{
+	width: 100%;
+}
+.customInstagram .container-fluid{
+	padding: 0;
+}
+
+
+/******************************************Footer********************************************/
+
+
+
+footer {
+    text-align: center;
+    background-image: url(../img/footer-bg.png);
+    padding-top: 55px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subscribeBlock form {
+    max-width: 640px;
+    margin: auto; 
+    background: white;
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    border-radius: 5px;
+}
+.subscribeBlock input[type="email"] {
+    width: 100%;
+    padding:0 15px;
+    border-radius: 5px 0 0 5px;
+}
+.subscribeBlock button {
+     padding: 12px 58px;
+    background: #FC9D9D;
+    color: #333;
+    font-family: 'Ledger', serif;
+    font-size: 19px;
+    border-radius: 0px 5px 5px 0;
+}
+.subscribeBlock{
+	padding-top: 40px
+}
+.subscribeBlock h3{
+	font-family: 'My Soul', cursive;
+	font-size: 70px;
+	color: #FC9D9D;
+	margin-bottom: 9px;
+}
+.subscribeBlock p{
+	font-size: 22px;
+	font-family: 'Ledger', serif;
+	color: #333;
+	margin-bottom: 40px;
+}
+.customFooterNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+	margin: auto;
+	padding: 45px 0;
+}
+.customFooterNav li a{
+	font-family: 'Ledger',sans-serif;
+	font-size: 22px;
+	color: #333;
+}
+.customFooterNav li a:hover{
+	color: #FC9D9D;
+}
+.footerSocialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 80px;
+}
+.footerSocialIcons li {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+        margin-right: 30px;
+}
+.footerSocialIcons li:last-child{
+	margin-right: 0;
+}
+.footerSocialIcons li:after {
+    content: "";
+    border:1px solid #333;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transform: rotate(45deg);
+    padding: initial;
+    display: block;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}	
+.footerSocialIcons li a {
+    font-size: 18px;
+    color: #333;
+}
+.footerSocialIcons li:hover:after,  .footerSocialIcons li:hover a{
+	border-color:  #fc9d9d;
+	color: #fc9d9d;
+	transition: 0.5s;
+} 
+.copyright {
+    margin-bottom: 0;
+    padding: 30px 0;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Ledger', serif;
+    border-top: 1px solid #fc9d9d;
+}

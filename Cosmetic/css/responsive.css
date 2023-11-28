@@ -1,0 +1,237 @@
+
+@media screen and (max-width:1124px){
+    .customNav .nav-item .nav-link, .wishlist a {
+    padding: 0px 10px;
+}
+
+.headerIcons li {
+    margin-left: 30px;
+}
+.bannerText {
+    margin-left: calc(100% - 555px);
+    } 
+    .productBlock a {
+     font-size: 16px;
+     margin-top: 10px;
+}
+}
+ 
+@media screen and (max-width:991px){
+ .customNavigation .navbar-toggler-icon {
+    background: #fc9d9d;
+     height: 3px;
+    width: 30px;
+    border-radius: 400px;
+    position: relative;
+}
+.customNavigation .navbar-toggler-icon:before {
+    content: "";
+    background: #fc9d9d;
+    height: 3px;
+    width: 30px;
+    border-radius: 400px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+.customNavigation{
+    padding: 15px 0;
+    position: relative;
+}
+.customNav {
+    margin-top: 15px;
+}
+.customNav .nav-item .nav-link {
+    padding-top: 15px;
+}
+.customNavigation .navbar {
+    padding: 0;
+    justify-content: right;
+}
+.customNavigation .navbar-toggler-icon:after {
+    content: "";
+    background: #fc9d9d;
+    height: 3px;
+    width: 30px;
+    border-radius: 400px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+ 
+.headerIcons {
+    justify-content: right;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+.navigation .navbar-toggler {
+    position: absolute;
+    top: -160px;
+    right: 0;
+}
+.wishlist{
+    text-align: left;
+}
+ .customNavigation .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navigationRow{
+    align-items:    ;
+}
+ .navigationRow .navbar-toggler {
+    position: absolute;
+    top: -145px;
+}
+.logo {
+    text-align: left;
+    width: calc(100% - 80px);
+}
+ 
+.bannerText h1 {
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 10px;
+}
+.bannerText p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    }
+.bannerText {
+    margin-left: 0;
+}
+.owl-carousel .owl-item img {
+    width: calc(100% - 25px);
+}
+.blogText {
+    max-width: 90%;
+    }
+}
+@media screen and (max-width:767px){
+    .customBlog {
+    padding-top: 20px;
+}
+.customBanner{
+    margin-bottom: 20px;
+}
+.customQuote {
+    padding: 30px 0;
+    margin: 20px 0;
+}
+.customProduct ,.benifitBlock,.customCategories{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bannerText {
+    margin-left: 0;
+    width: unset;
+    position: absolute;
+    margin-top: 0px;
+    background: #ffffffc2;
+    left: 15px;
+    right: 25px;
+    padding: 15px 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ .topbar a {
+    font-size: 12px;
+    line-height: 30px;
+}
+.topbar ul ,
+.subscribeBlock form{
+    display: block;
+    text-align: center;
+}
+ .bannerText a {
+    padding: 7px 25px;
+        font-size: 12px;
+}
+.bannerText h1 {
+    font-size: 34px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.mainHeading h2:after, .mainHeading h2:before {
+   width: 270px;
+    height: 80px;
+}
+.mainHeading h2 {
+    font-size: 32px;
+    padding-top: 10px;
+}
+.customQuote p {
+    font-size: 14px;
+    line-height: 26px;
+    }
+.customQuote h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.customFooterNav {
+    display: block;
+}
+.benifitBlock a ,.blogText h3 {
+   font-size: 18px;
+}
+.benifitBlock p {
+    font-size: 12px;
+    line-height: 22px;
+}
+.benifitBlock span {
+    padding: 10px;
+    margin-right: 15px;
+}
+.mainHeading {
+    min-height: 85px;
+}
+.customBenefits {
+    margin: 15px 0;
+    padding: 30px 0 15px 0;
+    background-position: center left;
+}
+.subHeading {
+    margin: 15px 0 ;
+    font-size: 14px;
+}
+.customSlider .owl-dots {
+    display: none;
+}
+.customBrand {
+    padding: 0;
+}
+.subscribeBlock h3 {
+    font-size: 30px;
+}
+.subscribeBlock p {
+    font-size: 14px;    
+    margin-bottom: 20px;
+}
+.subscribeBlock input[type="email"] { 
+ padding: 15px 15px;
+ text-align: center;
+ border-radius: 5px 5px 0 0px;
+}
+.subscribeBlock button{
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 0px 0px 5px 5px;
+}
+.footerSocialIcons{
+    padding-bottom: 40px;
+}
+.customFooterNav li a {
+    padding: 5px 0;
+    display: block;
+}
+.copyright {
+    padding: 20px 0;
+    font-size: 14px;
+    }
+    .categoriesText{
+        padding: 10px  ;
+    }
+
+}
