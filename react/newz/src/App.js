@@ -2,7 +2,10 @@ import './App.css';
 import Header from './components/Header.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.min.js';
-import "bootstrap/dist/js/bootstrap.bundle.js"
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import 'jquery/dist/jquery.js'
+
+
 
 function App() {
   return (
