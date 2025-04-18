@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #333;
+        stroke-width: 1.2px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0 2 2 0 7 6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #102c3c;
+      }
+
+      .cls-4 {
+        fill: #de3340;
+        mix-blend-mode: multiply;
+      }
+
+      .cls-5 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g class="cls-5">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <path class="cls-3" d="M80.24,17.9h13.01c3.45,0,6.25,2.8,6.25,6.25v60.58c0,3.46-2.8,6.25-6.25,6.25H6.75c-3.45,0-6.25-2.79-6.25-6.25V24.15c0-3.45,2.8-6.25,6.25-6.25h12.73"/>
+        <g>
+          <g>
+            <rect class="cls-3" x="27.88" y="20.2" width="17.2" height="17.93"/>
+            <line class="cls-3" x1="63.72" y1="20.2" x2="72.12" y2="20.2"/>
+            <line class="cls-3" x1="52.01" y1="20.2" x2="58.58" y2="20.2"/>
+            <line class="cls-3" x1="52.01" y1="29.17" x2="72.12" y2="29.17"/>
+            <line class="cls-3" x1="69.56" y1="38.13" x2="72.12" y2="38.13"/>
+            <line class="cls-3" x1="52.01" y1="38.13" x2="64.5" y2="38.13"/>
+            <line class="cls-3" x1="50.01" y1="47.1" x2="72.12" y2="47.1"/>
+            <line class="cls-3" x1="27.88" y1="56.07" x2="72.12" y2="56.07"/>
+            <line class="cls-3" x1="27.88" y1="47.1" x2="43.08" y2="47.1"/>
+            <line class="cls-3" x1="63.72" y1="65.04" x2="72.12" y2="65.04"/>
+            <line class="cls-3" x1="27.88" y1="65.04" x2="56.79" y2="65.04"/>
+          </g>
+          <path class="cls-3" d="M80.38,62.52v8.73c0,2.06-1.73,3.74-3.85,3.74H23.48c-2.13,0-3.85-1.67-3.85-3.74V12.76c0-2.06,1.73-3.74,3.85-3.74h53.05c2.13,0,3.85,1.67,3.85,3.74v49.76Z"/>
+          <rect class="cls-4" x="30.07" y="22.04" width="17.28" height="18.36"/>
+        </g>
+        <circle class="cls-1" cx="50" cy="85.51" r="2.11"/>
+        <line class="cls-3" x1=".36" y1="81.03" x2="99.36" y2="81.03"/>
+      </g>
+      <path class="cls-2" d="M88.23,24.28h4.3c.93,0,1.68.69,1.68,1.53v6.65"/>
+      <path class="cls-2" d="M12.04,75.74h-4.3c-.93,0-1.68-.69-1.68-1.53v-6.65"/>
+    </g>
+  </g>
+</svg>
