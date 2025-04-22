@@ -110,6 +110,5 @@ function Header() {
         </div>
         </header>
     </>;
-  }
-  
-  export default Header;
+}
+export default Header;
