@@ -1,4 +1,4 @@
-import './main.css';
+import '../main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Main() {
@@ -9,7 +9,7 @@ function Main() {
                 <div class="row d-flex flex-column-reverse flex-lg-row">
                     <div class="col-12 col-lg-8">
                         <div class="d-flex align-items-center flex-column flex-md-row">
-                            <img src="./assest/image/cover.png" alt="" class="book-img me-5"/>
+                            <img src={"require(../assets/images/cover.png)"} alt="" class="book-img me-5"/>
                             <div class="cover-book d-flex flex-column">
                                 <h1 class="fw-bold text-uppercase mb-4 text-white">Real English</h1>
                                 <span class="fw-bold text-uppercase mb-2">NEP-NCF Edition 2025</span>
