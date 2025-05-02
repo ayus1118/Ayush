@@ -1,5 +1,6 @@
 import '../main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Routes, Router } from "react-router-dom"
 
 function Main() {
   return (
@@ -9,7 +10,7 @@ function Main() {
                 <div class="row d-flex flex-column-reverse flex-lg-row">
                     <div class="col-12 col-lg-8">
                         <div class="d-flex align-items-center flex-column flex-md-row">
-                            <img src={"require(../assets/images/cover.png)"} alt="" class="book-img me-5"/>
+                            <img src={"./images/cover.png"} alt="" class="book-img me-5"/>
                             <div class="cover-book d-flex flex-column">
                                 <h1 class="fw-bold text-uppercase mb-4 text-white">Real English</h1>
                                 <span class="fw-bold text-uppercase mb-2">NEP-NCF Edition 2025</span>
@@ -34,126 +35,130 @@ function Main() {
                 <div class="row">
                     <div class="col-12">
                         <ul class="all-activites p-0">
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Animated_Concepts.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Animated Lessons</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/E-book.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">E-book</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Lesson_Plans.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Lesson Plans</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Detailed_Answer_Keys.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Answer Key (Coursebook)</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/nep.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">NEP Resources (Coursebook)</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/audio.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Audio (Interact)</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/audio_transcripts.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Audio Transcripts</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Interactive_Exercises.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Interactive Exercises</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Worksheet_with_Answers.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Worksheets</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/model.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Model Tests</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Test_Generator.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Test Generator</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/E-book.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">NEP Resources (Activity E-book)</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Detailed_Answer_Keys.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Answer Key (Workbook)</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/Test_Generator.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">Audio Transcripts (Workbook)</span>
-                                </a>
-                            </li>
-                            <li class="iconlist">
-                                <a href="#" class="d-flex flex-column align-items-center">
-                                    <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
-                                        <img src="./assest/image/nep.png" alt="" class=""/>
-                                    </span>
-                                    <span class="activite-title">NEP Resources (Workbook)</span>
-                                </a>
-                            </li>
+                            <Router>
+                                <Routes>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                <img src={"./images/Animated_Concepts.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Animated Lessons</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/E-book.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">E-book</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/Lesson_Plans.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Lesson Plans</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/Detailed_Answer_Keys.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Answer Key (Coursebook)</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/nep.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">NEP Resources (Coursebook)</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/audio.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Audio (Interact)</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/audio_transcripts.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Audio Transcripts</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/Interactive_Exercises.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Interactive Exercises</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/Worksheet_with_Answers.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Worksheets</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/model.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Model Tests</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/Test_Generator.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Test Generator</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/E-book.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">NEP Resources (Activity E-book)</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/Detailed_Answer_Keys.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Answer Key (Workbook)</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/Test_Generator.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">Audio Transcripts (Workbook)</span>
+                                            </Link>
+                                        </li>
+                                        <li class="iconlist">
+                                            <Link to="" class="d-flex flex-column align-items-center">
+                                                <span class="activity-imgage-outer d-flex align-items-center justify-content-center mb-4">
+                                                    <img src={"./images/nep.png"} alt="" class=""/>
+                                                </span>
+                                                <span class="activite-title">NEP Resources (Workbook)</span>
+                                            </Link>
+                                        </li>
+                                </Routes>
+                            </Router>
                         </ul>
                     </div>
                 </div>
