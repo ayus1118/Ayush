@@ -1,6 +1,6 @@
 import '../main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, Routes, Router } from "react-router-dom"
+import { createBrowserRouter } from "react-router-dom"
 
 function Main() {
   return (
