@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-function Header(props) {
+export default function Header(props) {
     return (
         <>
         <header className="header">
@@ -17,9 +18,9 @@ function Header(props) {
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                        <span className="navbar-toggler-icon"></span>
-                        <span className="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
                         </button>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -86,4 +87,14 @@ function Header(props) {
     </>
     );
 }
-export default Header;
+
+// Setting props type
+Header.propTypes = {
+    menu1: PropTypes.string,
+    menu2: PropTypes.string,
+    menu3: PropTypes.string,
+}
+// Setting default props
+Header.defaultprops = {
+    menu1: "let me test",
+}
