@@ -6,7 +6,7 @@ import Header from './Header/Header.jsx';
 function Main() {
   return (
    <>
-      <Header menu1='home' menu2="About" menu3="Contact Us"/>
+      <Header menu1={3} menu2="About" menu3="Contact Us"/>
    </>
   );
 }
