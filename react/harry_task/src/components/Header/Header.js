@@ -27,7 +27,7 @@ export default function Header(props) {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">{typeof(props.menu1)}</a>
+                            data-bs-toggle="dropdown" aria-expanded="false">{props.menu1}</a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                                 <a className="dropdown-item" href="./subject-page.html">English</a>
@@ -41,7 +41,7 @@ export default function Header(props) {
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                                {typeof(props.menu2)}
+                                {props.menu2}
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li className="dropdown-submenu">
@@ -85,14 +85,14 @@ export default function Header(props) {
             </div>
         </header>
     </>
-    );
+ )
 }
 
 // Setting props type
 Header.propTypes = {
-    menu1: PropTypes.string,
+    menu1: PropTypes.string.isRequired,
     menu2: PropTypes.string,
-    menu3: PropTypes.string,
+    menu3: PropTypes.string
 };
 // Setting default props
 Header.defaultprops = {
