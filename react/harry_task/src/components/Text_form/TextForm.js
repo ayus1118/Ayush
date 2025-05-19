@@ -14,9 +14,6 @@ export default function TextFrom(props){
     const handleclear = () =>{
       setText("");
     }
-    handleEmail = () =>{
-
-    }
     const [text, setText] = useState('where is text');
     return (
     <>
@@ -31,7 +28,6 @@ export default function TextFrom(props){
                         <button className="btn btn-primary me-2" onClick={handleUpclick} > change to upper case </button>
                         <button className="btn btn-primary me-2" onClick={handleLwclick}> change to lower case </button>
                         <button className="btn btn-primary me-2" onClick={handleclear}> clear text</button>
-                        <button className="btn btn-primary me-2" onClick={handleEmail}> email extractor</button>
                     </div>
             </div>
             <div className="container">
