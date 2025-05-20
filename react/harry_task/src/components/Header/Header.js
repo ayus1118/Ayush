@@ -8,7 +8,7 @@ export default function Header(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <nav className="navbar navbar-expand-lg justify-content-between">
+                            <nav className={`navbar navbar-expand-lg justify-content-between bg-${props.modechange} navbar-${props.modechange}`}>
                                 <a className="navbar-brand" href="./index.html"><img src="../images/logo.png" alt="" className="logo" /></a>
                                 <div className="d-flex flex-row-reverse">
                                     <div className="header-ctn d-flex order-1 order-md-2 text-white d-lg-none">
@@ -77,6 +77,10 @@ export default function Header(props) {
                                         <a href="./signIn.html" className="c-btn c-btn-ing mx-2">
                                             Login
                                         </a>
+                                    </div>
+                                    <div className="form-check form-switch">
+                                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode}/>
+                                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Default switch checkbox input</label>
                                     </div>
                                 </div>
                             </nav>
