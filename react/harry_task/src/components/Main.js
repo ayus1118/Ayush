@@ -8,6 +8,7 @@ import DismissAleart from './alearts/Dismiss_alert.js';
 import About from './About/About.js';
 import { useState } from 'react';
 function Main() {
+  
   const [mode,setmode] = useState ("dark");
   const toggleMode =() => {
     if(mode === 'light'){
