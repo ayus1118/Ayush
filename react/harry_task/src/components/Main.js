@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
 import 'jquery/dist/jquery.min.js'
 import '../App.css';
+
 import Header from './Header/Header.js';
 import TextFrom from './Text_form/TextForm.js';
 import DismissAleart from './alearts/Dismiss_alert.js';
@@ -10,6 +11,13 @@ import { useState } from 'react';
 function Main() {
   
   const [mode,setmode] = useState ("dark");
+  const [alert,setalert] = useState(null);
+
+
+  const showalert = (message , type) =>{
+
+  } 
+
   const toggleMode =() => {
     if(mode === 'light'){
        setmode('dark');
@@ -25,7 +33,7 @@ function Main() {
   return (
     <>
       <Header menu1="home" menu2="About" menu3="Contact Us" modechange={mode} toggleMode = {toggleMode}/>
-       <DismissAleart title="dissmiss alert"/>
+      <DismissAleart title="Dissmiss Alert"/>
       <TextFrom main-heading=""/>
       <About modechange={mode}/>
     </>

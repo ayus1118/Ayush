@@ -6,9 +6,9 @@ export default function DismissAleart(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div ClassName="alert alert-warning alert-dismissible fade show" role="alert">
-                            <span>{props.title}</span>
-                            <button type="button" ClassName="close" data-dismiss="alert" aria-label="Close">
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            {props.title}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
