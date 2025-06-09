@@ -78,10 +78,18 @@ export default function Header(props) {
                                             Login
                                         </a>
                                     </div>
-                                    <div className={`form-check form-switch text-${props.modechange === 'light' ? 'dark' : 'light'}`}>
+                                    <div className={`form-check mx-2 form-switch text-${props.modechange === 'light' ? 'dark' : 'light'}`}>
                                         <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
-                                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Default switch checkbox input</label>
+                                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Set Dark Mode</label>
                                     </div>
+                                    {/* <div className={`form-check mx-2 form-switch text-${props.modechange === 'green' ? 'dark' : 'light'}`}>
+                                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
+                                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable green color</label>
+                                    </div>
+                                    <div className={`form-check mx-2 form-switch text-${props.modechange === 'red' ? 'dark' : 'red'}`}>
+                                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
+                                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable red colour</label>
+                                    </div> */}
                                 </div>
                             </nav>
                         </div>

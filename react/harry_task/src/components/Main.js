@@ -11,6 +11,8 @@ import { useState } from 'react';
 function Main() {
   
   const [mode,setmode] = useState ("dark");
+  const [redmode,setredmode] = useState ("dark");
+
   const [alert,setalert] = useState(null);
   const showalert = (message , type) =>{
      setalert({
@@ -31,6 +33,17 @@ function Main() {
        document.body.style.backgroundColor = "white";
        document.body.style.color= "black";
        showalert("Dark mode is on", "success")
+    }
+    if(redmode === 'red'){
+      setmode('light');
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = "black";
+    }
+    
+    if(redmode === 'red'){
+      setmode('light');
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = "black";
     }
   } 
   return (
