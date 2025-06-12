@@ -39,8 +39,7 @@ function Main() {
       document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
     }
-    
-    if(redmode === 'red'){
+    if(redmode === ''){
       setmode('light');
       document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
@@ -56,4 +55,3 @@ function Main() {
   );
 }
 export default Main;
-
