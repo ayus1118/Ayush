@@ -1,12 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js'
-import 'jquery/dist/jquery.min.js'
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'jquery/dist/jquery.min.js';
 import '../App.css';
 
 import Header from './Header/Header.js';
 import TextFrom from './Text_form/TextForm.js';
 import DismissAleart from './alearts/Dismiss_alert.js';
-import About from './About/About.js';
 import { useState } from 'react';
 function Main() {
   
