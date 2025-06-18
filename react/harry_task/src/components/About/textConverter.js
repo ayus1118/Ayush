@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function About(props) {
+export default function textConverter(props) {
     const [mystyle, setmyStyle] = useState(
         {
             color: 'white',
