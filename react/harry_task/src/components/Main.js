@@ -49,7 +49,6 @@ function Main() {
       <Header menu1="home" menu2="About" menu3="Contact Us" modechange={mode} toggleMode = {toggleMode}/>
       <DismissAleart alert="Dissmiss Alert"/>
       <TextFrom alert={alert}/>
-      <About modechange={mode}/>
     </>
   );
 }

@@ -1,13 +1,11 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
-import NoPage from "./pages/NoPage";
 import PropTypes from 'prop-types';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import aboutUs from "../aboutUs/aboutUs";
+
 
 export default function Header(props) {
+    
     return (
         <>
             <header className="header">
@@ -32,44 +30,20 @@ export default function Header(props) {
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">{props.menu1}</a>
-                                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li>
-                                                    <a className="dropdown-item" href="./subject-page.html">English</a>
-                                                    <a className="dropdown-item" href="./subject-page.html">Hindi</a>
-                                                    <a className="dropdown-item" href="./subject-page.html">Math</a>
-                                                    <a className="dropdown-item" href="./subject-page.html">science</a>
-                                                    <a className="dropdown-item view-more-subject" href="./subject-page.html">View More</a>
-                                                </li>
-                                            </ul>
+                                            <Link className="nav-link" to={"/"} id="navbarDropdown" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">{props.menu1}</Link>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
+                                            <Link className="nav-link" to={"../aboutUs/aboutUs.js"} id="navbarDropdown" role="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                                 {props.menu2}
-                                            </a>
-                                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li className="dropdown-submenu">
-                                                    <a className="dropdown-item" href="/">About</a>
-                                                    <ul className="dropdown-menu">
-                                                        <li><a className="dropdown-item" href="./about.html">Who We Are</a></li>
-                                                        <li><a className="dropdown-item" href="./our-team.html">Meet the Team</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="./career.html">Career</a>
-                                                </li>
-                                                <li>
-                                                    <a className="dropdown-item" href="./new-and-media.html">Newsroom</a>
-                                                </li>
-                                            </ul>
+                                            </Link>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link" href="/" id="navbarDropdown" role="button"
+                                            <Link className="nav-link" to={"/"} id="navbarDropdown" role="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                                 {props.menu3}
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                     <div className="header-ctn d-flex order-1 order-md-2 text-white d-none d-lg-flex">
@@ -94,20 +68,12 @@ export default function Header(props) {
                     </div>
                 </div>
             </header>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+            <BrowserRouter>
+                <Route path="/aboutUs" element={<aboutUs />} />
+            </BrowserRouter>
         </>
     )
 }
-
 // Setting props type
 Header.propTypes = {
     menu1: PropTypes.string.isRequired,
